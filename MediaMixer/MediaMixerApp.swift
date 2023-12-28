@@ -13,7 +13,9 @@ struct MediaMixerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                HomeView()
+            }
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
