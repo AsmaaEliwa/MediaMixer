@@ -11,16 +11,16 @@ struct HomeView: View {
     @State var query:String = ""
     @State var isSearching = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Label("Welcome back", systemImage: "music.quarternote.3").shadow(color: .blue ,radius: 10).font(.system(size: 25))
         
         VStack{
             HStack{
-                TextField(" Enter Song", text: $query).frame(width: 300,height: 40).border(.gray)
+                TextField(" Enter Song", text: $query).padding().frame(width: 300,height: 40).border(.blue)
                 Button{
                     NetworkManger.shared.search(query:query )
                     isSearching = true
                 }label: {
-                    Image(systemName: "magnifyingglass").frame(width: 30,height: 40)
+                    Image(systemName: "magnifyingglass").frame(width: 40,height: 40)
                 }
             }.padding()
             NavigationLink(destination:SearchResultsView(),isActive: $isSearching ){
