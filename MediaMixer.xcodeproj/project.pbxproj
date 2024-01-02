@@ -120,9 +120,8 @@
 				7F43F0DA2B3CDD0C00FF5731 /* Persistence.swift */,
 				7F43F0DC2B3CDD0C00FF5731 /* MediaMixer.xcdatamodeld */,
 				7F43F0D72B3CDD0C00FF5731 /* Preview Content */,
-				7F43F1002B3CE23B00FF5731 /* APIManger.swift */,
-				7F43F1022B3CE37D00FF5731 /* NetworkManger.swift */,
-				7F43F1042B3CE4FE00FF5731 /* SearchModel.swift */,
+				7F43F1102B43971B00FF5731 /* DataManger */,
+				7F43F1112B43972A00FF5731 /* Model */,
 				7F43F1062B3CE93300FF5731 /* HomeView.swift */,
 				7F43F1082B3CED2200FF5731 /* SearchResultsView.swift */,
 				7F43F10A2B3E222900FF5731 /* SongView.swift */,
@@ -155,6 +154,23 @@
 				7F43F0F32B3CDD0D00FF5731 /* MediaMixerUITestsLaunchTests.swift */,
 			);
 			path = MediaMixerUITests;
+			sourceTree = "<group>";
+		};
+		7F43F1102B43971B00FF5731 /* DataManger */ = {
+			isa = PBXGroup;
+			children = (
+				7F43F1002B3CE23B00FF5731 /* APIManger.swift */,
+				7F43F1022B3CE37D00FF5731 /* NetworkManger.swift */,
+			);
+			path = DataManger;
+			sourceTree = "<group>";
+		};
+		7F43F1112B43972A00FF5731 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F43F1042B3CE4FE00FF5731 /* SearchModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -462,6 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MediaMixer/Preview Content\"";
+				DEVELOPMENT_TEAM = PPGW64ZB2J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -491,6 +508,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MediaMixer/Preview Content\"";
+				DEVELOPMENT_TEAM = PPGW64ZB2J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
