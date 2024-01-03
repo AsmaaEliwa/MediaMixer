@@ -57,7 +57,7 @@ class NetworkManger:ObservableObject{
     }
 
         // Helper method to update the current song
-    private func updateCurrentSong() {
+     func updateCurrentSong() {
         DispatchQueue.main.async {
             if let searchResult = self.searchResult, !searchResult.data.isEmpty {
                 self.currentSong = searchResult.data[self.currentIndex]

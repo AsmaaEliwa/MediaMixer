@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SongView: View {
-    var song:DataModel?
+    var song:DataModel
     @State  var albumImage: Image?
     @ObservedObject var networkManager = NetworkManger.shared
     @State var showShare = false
@@ -20,7 +20,7 @@ struct SongView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 150, height: 150).padding()
-            Text(" \(song?.artist.name ?? "") : \(song?.title ?? "")").shadow(color: .black, radius: 3).font(.system(size: 20)).padding()
+            Text(" \(song.artist.name ) : \(song.title )").shadow(color: .black, radius: 3).font(.system(size: 20)).padding()
             Button{
                 showShare = true
             }label: {
@@ -43,7 +43,7 @@ struct SongView: View {
                         .padding()
                 }
                 Button{
-                    audioManger.shared.playAudioFromURL(urlString: song?.preview ?? "")
+                    audioManger.shared.playAudioFromURL(urlString: song.preview )
                 }label: {
                     Image(systemName: "play.circle").resizable() // Make the image inside the button resizable
                         .frame(width: 50, height: 50)
@@ -57,7 +57,7 @@ struct SongView: View {
                 }
                 Spacer()
                     .sheet(isPresented: $showShare, content: {
-                                ActivShareView(activityItems: [song])
+                        ActivShareView(activityItems: [song])
                             })
             }.padding()
 
@@ -71,7 +71,7 @@ struct SongView: View {
     }
      
     func loadAlbumImage() {
-           guard let urlString = song?.album.cover_small else { return }
+         let urlString = song.album.cover_small 
            ImageLoader.loadImage(from: urlString) { image in
                self.albumImage = image
            }
@@ -79,9 +79,9 @@ struct SongView: View {
 
 }
 
-#Preview {
-    SongView()
-}
+//#Preview {
+//    SongView()
+//}
 
 struct ActivShareView:UIViewControllerRepresentable{
     let activityItems: [Any]
