@@ -22,10 +22,18 @@ struct SongView: View {
                 .scaledToFit()
                 .frame(width: 150, height: 150).padding()
             Text(" \(networkManager.currentSong?.artist.name ?? "" ) : \(networkManager.currentSong?.title ?? ""  )").shadow(color: .black, radius: 3).font(.system(size: 20)).padding()
-            Button{
-                showShare = true
-            }label: {
-                Image(systemName: "square.and.arrow.up")
+            HStack{
+                Button{
+                    showShare = true
+                }label: {
+                    Image(systemName: "square.and.arrow.up")
+                }
+                Button{
+                    DataManger.shared.addToFav(song: networkManager.currentSong! )
+                }label: {
+                    Image(systemName: "bookmark")
+                }
+                
             }
             HStack{
                 
@@ -65,11 +73,16 @@ struct SongView: View {
             }.padding()
 
         }.onAppear {
+            
+            networkManager.currentSong = song
             loadAlbumImage()
+          
         }
         .onDisappear {
                    // Stop the audio when the view disappears
             audioManger.shared.stopAudio()
+            networkManager.currentSong = nil
+            
                }
     }
      

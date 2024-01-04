@@ -14,7 +14,7 @@ struct MediaMixerApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack{
-                HomeView()
+                SearchView()
             }
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
