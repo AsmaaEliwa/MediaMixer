@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @State var query:String = ""
     @State var isSearching = false
+    var networkManager: NetworkManaging?
     var body: some View {
         Label("Welcome back", systemImage: "music.quarternote.3").shadow(color: .blue ,radius: 10).font(.system(size: 25))
         
@@ -29,7 +30,7 @@ struct HomeView: View {
         }
     }
 }
-
-#Preview {
-    HomeView()
-}
+//
+//#Preview {
+//    HomeView()
+//}

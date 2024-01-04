@@ -33,10 +33,16 @@ final class MediaMixerTests: XCTestCase {
         }
     }
     
-    func testSongFetching() {
-        let expectation = XCTestExpectation(description: "Fetch songs from the network")
+    func testSearchQuery() {
+           let mockNetworkManager = MockNetworkManager()
 
-    }
+           // Simulate the search button action
+           let query = "Test Song"
+           mockNetworkManager.search(query: query)
+
+           // Assert that the search function was called with the correct query
+           XCTAssertEqual(mockNetworkManager.lastSearchedQuery, query)
+       }
 
 
 }

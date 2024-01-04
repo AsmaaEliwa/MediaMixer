@@ -9,18 +9,19 @@ import SwiftUI
 
 struct SongView: View {
     var song:DataModel
-    @State  var albumImage: Image?
+    @State  var albumImage: UIImage?
     @ObservedObject var networkManager = NetworkManger.shared
     @State var showShare = false
     
     var body: some View {
         VStack{
             
-            albumImage?
+            Image(uiImage: albumImage ?? UIImage())
+                  
                 .resizable()
                 .scaledToFit()
                 .frame(width: 150, height: 150).padding()
-            Text(" \(song.artist.name ) : \(song.title )").shadow(color: .black, radius: 3).font(.system(size: 20)).padding()
+            Text(" \(networkManager.currentSong?.artist.name ?? "" ) : \(networkManager.currentSong?.title ?? ""  )").shadow(color: .black, radius: 3).font(.system(size: 20)).padding()
             Button{
                 showShare = true
             }label: {
@@ -31,6 +32,7 @@ struct SongView: View {
                 Spacer()
                 Button{
                     networkManager.playPreviousSong()
+                    loadAlbumImage()
                 }label: {
                     Image(systemName: "backward")
                 }
@@ -43,7 +45,7 @@ struct SongView: View {
                         .padding()
                 }
                 Button{
-                    audioManger.shared.playAudioFromURL(urlString: song.preview )
+                    audioManger.shared.playAudioFromURL(urlString: networkManager.currentSong?.preview ?? "" )
                 }label: {
                     Image(systemName: "play.circle").resizable() // Make the image inside the button resizable
                         .frame(width: 50, height: 50)
@@ -52,6 +54,7 @@ struct SongView: View {
                 }
                 Button{
                     networkManager.playNextSong()
+                    loadAlbumImage()
                 }label: {
                     Image(systemName: "forward")
                 }
@@ -71,7 +74,7 @@ struct SongView: View {
     }
      
     func loadAlbumImage() {
-         let urlString = song.album.cover_small 
+        guard let urlString = networkManager.currentSong?.album.cover_small else { return  } 
            ImageLoader.loadImage(from: urlString) { image in
                self.albumImage = image
            }

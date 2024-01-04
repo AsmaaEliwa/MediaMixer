@@ -6,7 +6,13 @@
 //
 
 import Foundation
-class NetworkManger:ObservableObject{
+
+protocol NetworkManaging {
+    func search(query: String)
+    
+}
+
+class NetworkManger:ObservableObject , NetworkManaging{
     @Published var searchResult: SearchModel?
     @Published var currentIndex: Int = 0
     @Published var currentSong: DataModel?
@@ -67,4 +73,15 @@ class NetworkManger:ObservableObject{
         }
     }
     
+}
+
+
+class MockNetworkManager: NetworkManaging {
+    var lastSearchedQuery: String?
+
+    func search(query: String) {
+        
+        lastSearchedQuery = query
+        
+    }
 }
