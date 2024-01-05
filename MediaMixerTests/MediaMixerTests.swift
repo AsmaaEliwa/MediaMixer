@@ -44,7 +44,7 @@ final class MediaMixerTests: XCTestCase {
 //           XCTAssertEqual(mockNetworkManager.lastSearchedQuery, query)
 //       }
     
-    func testEmptyQuery() {
+    func testEmptyQueryWillThrow() {
         let mockNetworkManager = MockNetworkManager()
         let emptyQuery = ""
 
@@ -56,6 +56,10 @@ final class MediaMixerTests: XCTestCase {
 
             XCTAssertEqual(mockError, MockNetworkManager.MockError.emptyQuery, "Expected EmptyQuery error")
         }
+    }
+    
+    func testfail(){
+        XCTFail()
     }
 
 }
