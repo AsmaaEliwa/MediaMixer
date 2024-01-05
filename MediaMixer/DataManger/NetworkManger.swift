@@ -6,37 +6,49 @@
 //
 
 import Foundation
-
+enum NetworkManagerError: Error {
+    case emptyQuery
+}
 protocol NetworkManaging {
-    func search(query: String)
+    func search(query: String)throws
     
 }
 
 class NetworkManger:ObservableObject , NetworkManaging{
+   
     @Published var searchResult: SearchModel?
     @Published var currentIndex: Int = 0
     @Published var currentSong: DataModel?
     static let shared = NetworkManger()
     private init(){}
     
-    func search(query:String){
-       
+    var lastSearchedQuery: String?
+
+       func search(query: String) throws {
+           guard !query.isEmpty else {
+               throw NetworkManagerError.emptyQuery
+           }
+           lastSearchedQuery = query
         let url = "https://api.deezer.com/search?q=\(query)"
         let decoder = JSONDecoder()
-        APIManger.shared.getRequest(url: url) { data in
-            if let jsonData = data {
-                
-                do {
-                    let result = try decoder.decode(SearchModel.self, from:jsonData )
-                    DispatchQueue.main.sync{
-                        self.searchResult = result
-                    }
-                   
-                }catch{
-                    print(error)
+        if query != "" {
+            APIManger.shared.getRequest(url: url) { data in
+                if let jsonData = data {
                     
+                    do {
+                        let result = try decoder.decode(SearchModel.self, from:jsonData )
+                        DispatchQueue.main.sync{
+                            self.searchResult = result
+                        }
+                        
+                    }catch{
+                        print(error)
+                        
+                    }
                 }
             }
+        }else{
+            throw NetworkManagerError.emptyQuery
         }
     }
     
@@ -77,11 +89,16 @@ class NetworkManger:ObservableObject , NetworkManaging{
 
 
 class MockNetworkManager: NetworkManaging {
+    enum MockError: Error {
+        case emptyQuery
+    }
+
     var lastSearchedQuery: String?
 
-    func search(query: String) {
-        
+    func search(query: String) throws {
+        guard !query.isEmpty else {
+            throw MockError.emptyQuery
+        }
         lastSearchedQuery = query
-        
     }
 }

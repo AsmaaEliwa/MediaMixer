@@ -236,8 +236,8 @@
             filePath = "MediaMixer/DataManger/NetworkManger.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "updateCurrentSong()"
             landmarkType = "7">
          </BreakpointContent>
@@ -254,8 +254,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
-            landmarkName = "testSearchQuery()"
-            landmarkType = "7">
+            landmarkName = "MediaMixerTests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -270,8 +270,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "testSearchQuery()"
-            landmarkType = "7">
+            landmarkName = "MediaMixerTests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -286,134 +286,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
             endingLineNumber = "37"
-            landmarkName = "testSearchQuery()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "412CD285-FE54-4C91-BCD9-931CFE26934C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MediaMixer/DataManger/NetworkManger.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "search(query:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "412CD285-FE54-4C91-BCD9-931CFE26934C - 46c76a0cd4c9a0ec"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MediaMixer.MockNetworkManager.search(query: Swift.String) -&gt; ()"
-                  moduleName = "MediaMixer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asmaagamal/Desktop/MediaMixer/MediaMixer/DataManger/NetworkManger.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "90">
-               </Location>
-               <Location
-                  uuid = "412CD285-FE54-4C91-BCD9-931CFE26934C - 46c76a0cd4c9a083"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MediaMixer.MockNetworkManager.search(query: Swift.String) -&gt; ()"
-                  moduleName = "MediaMixer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asmaagamal/Desktop/MediaMixer/MediaMixer/DataManger/NetworkManger.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "67">
-               </Location>
-               <Location
-                  uuid = "412CD285-FE54-4C91-BCD9-931CFE26934C - 46c76a0cd4c9a083"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MediaMixer.MockNetworkManager.search(query: Swift.String) -&gt; ()"
-                  moduleName = "MediaMixer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asmaagamal/Desktop/MediaMixer/MediaMixer/DataManger/NetworkManger.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "69">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "64D1807A-66E9-41A3-B2E9-0FFE31B56A88"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MediaMixer/DataManger/NetworkManger.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "MockNetworkManager"
+            landmarkName = "MediaMixerTests"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "64D1807A-66E9-41A3-B2E9-0FFE31B56A88 - 46c76a0cd4c9a02e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MediaMixer.MockNetworkManager.search(query: Swift.String) -&gt; ()"
-                  moduleName = "MediaMixer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asmaagamal/Desktop/MediaMixer/MediaMixer/DataManger/NetworkManger.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "81"
-                  endingLineNumber = "81"
-                  offsetFromSymbolStart = "50">
-               </Location>
-               <Location
-                  uuid = "64D1807A-66E9-41A3-B2E9-0FFE31B56A88 - 46c76a0cd4c9a0cd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MediaMixer.MockNetworkManager.search(query: Swift.String) -&gt; ()"
-                  moduleName = "MediaMixer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asmaagamal/Desktop/MediaMixer/MediaMixer/DataManger/NetworkManger.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "50">
-               </Location>
-               <Location
-                  uuid = "64D1807A-66E9-41A3-B2E9-0FFE31B56A88 - 46c76a0cd4c9a0cd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MediaMixer.MockNetworkManager.search(query: Swift.String) -&gt; ()"
-                  moduleName = "MediaMixer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asmaagamal/Desktop/MediaMixer/MediaMixer/DataManger/NetworkManger.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "82"
-                  endingLineNumber = "82"
-                  offsetFromSymbolStart = "52">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -426,8 +300,8 @@
             filePath = "MediaMixer/DataManger/NetworkManger.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "NetworkManaging"
             landmarkType = "5">
          </BreakpointContent>
@@ -732,8 +606,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
             endingLineNumber = "36"
-            landmarkName = "SearchQuery()"
-            landmarkType = "7">
+            landmarkName = "MediaMixerTests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

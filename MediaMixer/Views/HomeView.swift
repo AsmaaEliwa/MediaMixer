@@ -18,7 +18,13 @@ struct HomeView: View {
             HStack{
                 TextField(" Enter Song", text: $query).padding().frame(width: 300,height: 40).border(.blue)
                 Button{
-                    NetworkManger.shared.search(query:query )
+                    do {
+                        try
+                        NetworkManger.shared.search(query:query )
+                    }catch {
+                        print(error)
+                    }
+                  
                     isSearching = true
                 }label: {
                     Image(systemName: "magnifyingglass").frame(width: 40,height: 40)

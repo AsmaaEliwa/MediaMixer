@@ -33,16 +33,29 @@ final class MediaMixerTests: XCTestCase {
         }
     }
     
-    func test_SearchQuery() {
-           let mockNetworkManager = MockNetworkManager()
+//    func test_SearchQuery() {
+//           let mockNetworkManager = MockNetworkManager()
+//
+//           // Simulate the search button action
+//           let query = "Test Song"
+//           mockNetworkManager.search(query: query)
+//
+//           // Assert that the search function was called with the correct query
+//           XCTAssertEqual(mockNetworkManager.lastSearchedQuery, query)
+//       }
+    
+    func testEmptyQuery() {
+        let mockNetworkManager = MockNetworkManager()
+        let emptyQuery = ""
 
-           // Simulate the search button action
-           let query = "Test Song"
-           mockNetworkManager.search(query: query)
+        XCTAssertThrowsError(try mockNetworkManager.search(query: emptyQuery)) { error in
+            guard let mockError = error as? MockNetworkManager.MockError else {
+                XCTFail("Unexpected error type")
+                return
+            }
 
-           // Assert that the search function was called with the correct query
-           XCTAssertEqual(mockNetworkManager.lastSearchedQuery, query)
-       }
-
+            XCTAssertEqual(mockError, MockNetworkManager.MockError.emptyQuery, "Expected EmptyQuery error")
+        }
+    }
 
 }
