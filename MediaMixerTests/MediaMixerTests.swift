@@ -33,7 +33,7 @@ final class MediaMixerTests: XCTestCase {
         }
     }
     
-    func testSearchQuery() {
+    func test_SearchQuery() {
            let mockNetworkManager = MockNetworkManager()
 
            // Simulate the search button action

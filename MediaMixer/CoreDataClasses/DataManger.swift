@@ -37,6 +37,7 @@ class DataManger:ObservableObject{
                 
                 try persistentContainer.viewContext.save()
                 print("saved to favs")
+                fetchFav()
                 
             }catch {
                 print(error)

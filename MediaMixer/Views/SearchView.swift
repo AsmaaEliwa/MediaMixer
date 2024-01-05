@@ -12,8 +12,8 @@ struct SearchView: View {
     var body: some View {
         TabView(selection: $selectedView,
                 content:  {
-            HomeView().tabItem { Image(systemName: "house") }.tag(1)
-            FavView().tabItem { Image(systemName: "bookmark.circle.fill") }.tag(2)
+            HomeView().tabItem { Image(systemName: "house") }.tag(0)
+            FavView().tabItem { Image(systemName: "bookmark.circle.fill") }.tag(1)
         })
     }
 }
