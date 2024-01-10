@@ -19,8 +19,11 @@ class NetworkManger:ObservableObject , NetworkManaging{
     @Published var searchResult: SearchModel?
     @Published var currentIndex: Int = 0
     @Published var currentSong: DataModel?
+    @Published var MovieResult: [MovieModel] = []
     static let shared = NetworkManger()
-    private init(){}
+    private init(){
+        getMovie()
+    }
     
     var lastSearchedQuery: String?
 
@@ -51,6 +54,44 @@ class NetworkManger:ObservableObject , NetworkManaging{
             throw NetworkManagerError.emptyQuery
         }
     }
+    
+   
+    
+    func getMovie()  {
+        
+        let url = "https://imdb-top-100-movies.p.rapidapi.com/"
+        let decoder = JSONDecoder()
+        
+        APIManger.shared.getMovies(url: url) { data in
+            if let jsonData = data {
+                
+                do {
+                    let result = try decoder.decode([MovieModel].self, from:jsonData )
+                    DispatchQueue.main.sync{
+                        self.MovieResult = result
+                        
+                    }
+                    
+                }catch{
+                    print(error)
+                    
+                    
+                }
+            }
+        }
+    }
+     
+ 
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     func playNextSong() {
         guard let searchResult = searchResult, !searchResult.data.isEmpty else { return }
@@ -84,6 +125,9 @@ class NetworkManger:ObservableObject , NetworkManaging{
             }
         }
     }
+    
+    
+    
     
 }
 

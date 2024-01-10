@@ -236,8 +236,8 @@
             filePath = "MediaMixer/DataManger/NetworkManger.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "updateCurrentSong()"
             landmarkType = "7">
          </BreakpointContent>
@@ -608,6 +608,117 @@
             endingLineNumber = "36"
             landmarkName = "MediaMixerTests"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F6482A1-C608-4CF2-86D1-505939E00337"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MediaMixer/DataManger/NetworkManger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "getMovie()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3F6482A1-C608-4CF2-86D1-505939E00337 - a30ac7052152db0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MediaMixer.NetworkManger.playPreviousSong() -&gt; ()"
+                  moduleName = "MediaMixer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaMixer/MediaMixer/DataManger/NetworkManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "446">
+               </Location>
+               <Location
+                  uuid = "3F6482A1-C608-4CF2-86D1-505939E00337 - 28c56d597337cf3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in MediaMixer.NetworkManger.getMovie() -&gt; ()"
+                  moduleName = "MediaMixer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaMixer/MediaMixer/DataManger/NetworkManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CBDCDFA6-C542-4FE5-8A73-CA01BAD7FBCE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MediaMixer/DataManger/NetworkManger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "getMovie()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CBDCDFA6-C542-4FE5-8A73-CA01BAD7FBCE - 556737a629f1acfc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MediaMixer.NetworkManger.updateCurrentSong() -&gt; ()"
+                  moduleName = "MediaMixer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaMixer/MediaMixer/DataManger/NetworkManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "141">
+               </Location>
+               <Location
+                  uuid = "CBDCDFA6-C542-4FE5-8A73-CA01BAD7FBCE - 5e5a4b5c2205279b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in MediaMixer.NetworkManger.getMovie() -&gt; ()"
+                  moduleName = "MediaMixer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaMixer/MediaMixer/DataManger/NetworkManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "1004">
+               </Location>
+               <Location
+                  uuid = "CBDCDFA6-C542-4FE5-8A73-CA01BAD7FBCE - 5e5a4b5c2205279b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in MediaMixer.NetworkManger.getMovie() -&gt; ()"
+                  moduleName = "MediaMixer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/MediaMixer/MediaMixer/DataManger/NetworkManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "1041">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

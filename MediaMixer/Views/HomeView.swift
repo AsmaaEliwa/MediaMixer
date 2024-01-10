@@ -12,9 +12,10 @@ struct HomeView: View {
     @State var isSearching = false
     var networkManager: NetworkManaging?
     var body: some View {
-        Label("Welcome back", systemImage: "music.quarternote.3").shadow(color: .blue ,radius: 10).font(.system(size: 25))
+
         
         VStack{
+                    Label("Welcome back", systemImage: "music.quarternote.3").shadow(color: .blue ,radius: 10).font(.system(size: 25))
             HStack{
                 TextField(" Enter Song", text: $query).padding().frame(width: 300,height: 40).border(.blue)
                 Button{
