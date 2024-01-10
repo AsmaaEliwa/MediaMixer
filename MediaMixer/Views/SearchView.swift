@@ -15,6 +15,7 @@ struct SearchView: View {
             HomeView().tabItem { Image(systemName: "house") }.tag(0)
             FavView().tabItem { Image(systemName: "bookmark.circle.fill") }.tag(1)
             MovieSearchView().tabItem { Image(systemName: "movieclapper") }.tag(2)
+            SeriesView().tabItem { Image(systemName: "play.tv") }.tag(3)
         })
     }
 }

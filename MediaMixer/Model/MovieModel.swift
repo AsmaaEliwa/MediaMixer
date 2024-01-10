@@ -7,9 +7,11 @@
 
 import Foundation
 struct MovieModel:Codable,Hashable{
+
+    let id:String
     let title:String?
     let description:String?
     let image:String?
     let genre: [String]
-    let year:Int?
+
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 enum NetworkManagerError: Error {
     case emptyQuery
 }
@@ -20,9 +21,11 @@ class NetworkManger:ObservableObject , NetworkManaging{
     @Published var currentIndex: Int = 0
     @Published var currentSong: DataModel?
     @Published var MovieResult: [MovieModel] = []
+    @Published var SeriesResult: [MovieModel] = []
     static let shared = NetworkManger()
     private init(){
         getMovie()
+        getSeries()
     }
     
     var lastSearchedQuery: String?
@@ -69,6 +72,30 @@ class NetworkManger:ObservableObject , NetworkManaging{
                     let result = try decoder.decode([MovieModel].self, from:jsonData )
                     DispatchQueue.main.sync{
                         self.MovieResult = result
+                        
+                    }
+                    
+                }catch{
+                    print(error)
+                    
+                    
+                }
+            }
+        }
+    }
+     
+    func getSeries()  {
+        
+        let url = "https://imdb-top-100-movies.p.rapidapi.com/series/"
+        let decoder = JSONDecoder()
+        
+        APIManger.shared.getMovies(url: url) { data in
+            if let jsonData = data {
+                
+                do {
+                    let result = try decoder.decode([MovieModel].self, from:jsonData )
+                    DispatchQueue.main.sync{
+                        self.SeriesResult = result
                         
                     }
                     

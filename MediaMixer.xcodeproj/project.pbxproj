@@ -33,6 +33,7 @@
 		7F43F1242B4E0ACB00FF5731 /* CustomPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43F1232B4E0ACB00FF5731 /* CustomPublisher.swift */; };
 		7F43F1262B4E0F3D00FF5731 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43F1252B4E0F3D00FF5731 /* MovieModel.swift */; };
 		7F43F1282B4E17A400FF5731 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43F1272B4E17A400FF5731 /* MovieView.swift */; };
+		7F43F12A2B4F5D6000FF5731 /* SeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F43F1292B4F5D6000FF5731 /* SeriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		7F43F1232B4E0ACB00FF5731 /* CustomPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPublisher.swift; sourceTree = "<group>"; };
 		7F43F1252B4E0F3D00FF5731 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		7F43F1272B4E17A400FF5731 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
+		7F43F1292B4F5D6000FF5731 /* SeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 				7F43F11C2B46456F00FF5731 /* FavView.swift */,
 				7F43F1212B4E086500FF5731 /* MovieSearchView.swift */,
 				7F43F1272B4E17A400FF5731 /* MovieView.swift */,
+				7F43F1292B4F5D6000FF5731 /* SeriesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				7F43F1242B4E0ACB00FF5731 /* CustomPublisher.swift in Sources */,
 				7F43F1052B3CE4FE00FF5731 /* SearchModel.swift in Sources */,
 				7F43F1072B3CE93300FF5731 /* HomeView.swift in Sources */,
+				7F43F12A2B4F5D6000FF5731 /* SeriesView.swift in Sources */,
 				7F43F10B2B3E222900FF5731 /* SongView.swift in Sources */,
 				7F43F1262B4E0F3D00FF5731 /* MovieModel.swift in Sources */,
 				7F43F1132B462F3000FF5731 /* DataManger.swift in Sources */,
